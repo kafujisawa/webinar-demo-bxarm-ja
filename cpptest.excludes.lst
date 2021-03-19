@@ -1,0 +1,5 @@
+*/app/*
+*/CMSIS/*
+*/board/*
+*/startup/*
+*/STM32F4xx_StdPeriph_Driver/*
