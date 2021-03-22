@@ -26,12 +26,26 @@ pipeline {
         }
         stage('Create C++test Project') {
             steps {
-                sh 'docker exec --user 1000 -i cpptest_docker cpptestcli -data workspace -bdf webinar-demo-bxarm-ja/compile_commands.json -localsettings parasoft/cpptest/10.5/ls.properties -showdetails'
+                sh 'docker exec --user 1000 -i cpptest_docker cpptestcli -data workspace -bdf webinar-demo-bxarm-ja/compile_commands.json -localsettings webinar-demo-bxarm-ja/cpptest.ls.properties -showdetails'
             }
         }
-        stage('Run Static Analysis') {
-            steps {
-                sh 'docker exec --user 1000 -i cpptest_docker cpptestcli -data workspace -resource webinar-demo-bxarm-ja -config "builtin://MISRA C 2012" -showdetails'
+        stage('Run Tests') {
+            parallel {
+                stage('Run MISRA Guideline Test') {
+                    steps {
+                        sh 'docker exec --user 1000 -i cpptest_docker cpptestcli -data workspace -resource webinar-demo-bxarm-ja -config webinar-demo-bxarm-ja/cpptest.pipeline.MISRA\\ C2012.properties -exclude webinar-demo-bxarm-ja/cpptest.excludes.lst -localsettings webinar-demo-bxarm-ja/cpptest.ls.properties -publish -showdetails -appconsole stdout'
+                    }
+                }
+                stage('Run Security Test') {
+                    steps {
+                        sh 'echo "Run Security Test"'
+                    }
+                }
+                stage('Run Unit Tests') {
+                    steps {
+                        sh 'echo "Run Unit Tests"'
+                    }
+                }
             }
         }
         stage('Delete Docker Container') {
@@ -47,3 +61,4 @@ pipeline {
         }
     }
 }
+
