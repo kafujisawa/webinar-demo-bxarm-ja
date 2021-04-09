@@ -7,4 +7,3 @@ typedef struct Person {
 } Person;
 
 Person* retrievePersonFromDB(int id);
-

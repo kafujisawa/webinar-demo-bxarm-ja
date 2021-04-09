@@ -1,0 +1,545 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.9.278/LNX for ARM                  09/Apr/2021  18:57:36
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =  webinar-demo-bxarm-ja.elf
+#    Map file     =  ./webinar-demo-bxarm-ja.map
+#    Command line =
+#        --silent
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/arrayOutOfBounds.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/bufferOverflow.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/dbutil.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/divisionByZero.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/fileLeaks.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/integerOverflow.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/memoryLeaks.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/nullPointerDeref.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/nullPointerDerefBenchmark.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/sql.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/sqlInjection.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic/unreachableCode.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/app/main.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/app/stm32f4xx_it.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/board/iar_stm32f429ii_aca.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/startup/system_stm32f4xx.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/misc.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_adc.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_can.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_crc.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dac.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dbgmcu.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dcmi.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_dma.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_exti.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_flash.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_fmc.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_gpio.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_i2c.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_iwdg.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_pwr.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rcc.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rng.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_rtc.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_sdio.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_spi.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_syscfg.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_tim.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_usart.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src/stm32f4xx_wwdg.c.obj
+#        CMakeFiles/webinar-demo-bxarm-ja.dir/startup/startup_stm32f429x.s.obj
+#        --semihosting --entry __iar_program_start --vfe --text_out locale
+#        --map . --config
+#        /opt/iarsystems/bxarm-8.50.9/arm/bin/../config/linker/ST/stm32f429xI.icf
+#        -o webinar-demo-bxarm-ja.elf
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = DLMalloc
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The advanced heap was selected because the application calls memory
+allocation functions outside of system library functions, and there
+are calls to deallocation functions in the application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x81f'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P4":  place in [from 0x2000'0000 to 0x2001'bfff] |
+                [from 0x2001'c000 to 0x2001'ffff] |
+                [from 0x2002'0000 to 0x2002'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section application_specific_ro  in "P2|P6"
+  rw section application_specific_rw  in "P2|P6"
+  section .backup_sram                in "P5"
+  section .ccram                      in "P3"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x1ac
+  .intvec            ro code   0x800'0000   0x1ac  startup_stm32f429x.s.obj [5]
+                             - 0x800'01ac   0x1ac
+
+"P1":                                      0x2661
+  .text              ro code   0x800'01ac  0x14c4  dlmalloc.o [6]
+  .text              ro code   0x800'1670     0x6  abort.o [6]
+  .text              ro code   0x800'1676    0x3a  zero_init3.o [8]
+  .text              ro code   0x800'16b0    0x2c  xgetmemchunk.o [6]
+  .text              ro code   0x800'16dc    0x14  exit.o [9]
+  .text              ro code   0x800'16f0    0x7c  iarttio.o [9]
+  .text              ro code   0x800'176c    0x3c  XShttio.o [6]
+  .text              ro code   0x800'17a8   0x134  xprintftiny.o [6]
+  .text              ro code   0x800'18dc    0x36  strlen.o [8]
+  .text              ro code   0x800'1914   0x124  system_stm32f4xx.c.obj [5]
+  .text              ro code   0x800'1a38   0x110  XShHandles.o [6]
+  .text              ro code   0x800'1b48    0xf4  xfoprep.o [6]
+  .text              ro code   0x800'1c3c    0x86  ABImemcpy.o [8]
+  .text              ro code   0x800'1cc2    0x7e  fclose.o [6]
+  .text              ro code   0x800'1d40    0x4c  xfopen.o [6]
+  .text              ro code   0x800'1d8c    0xe4  xfofind.o [6]
+  .text              ro code   0x800'1e70    0xac  fflush.o [6]
+  .text              ro code   0x800'1f1c     0x4  heaptramp0.o [6]
+  .text              ro code   0x800'1f20    0x18  close.o [9]
+  .text              ro code   0x800'1f38    0x14  remove.o [9]
+  .text              ro code   0x800'1f4c    0x48  open.o [9]
+  .text              ro code   0x800'1f94    0x10  write.o [9]
+  .text              ro code   0x800'1fa4    0x1e  dwrite.o [9]
+  .text              ro code   0x800'1fc2    0x20  iarwstd.o [9]
+  .text              ro code   0x800'1fe2    0x22  iarwrite.o [9]
+  .text              ro code   0x800'2004    0xd8  xfspos.o [6]
+  .text              ro code   0x800'20dc     0xc  xfgpos.o [6]
+  .text              ro code   0x800'20e8    0x4a  lseek.o [9]
+  .text              ro code   0x800'2132    0xb4  xfwprep.o [6]
+  .text              ro code   0x800'21e6    0x24  fseek.o [6]
+  .text              ro code   0x800'220c    0xb0  divisionByZero.c.obj [4]
+  .text              ro code   0x800'22bc    0x28  printf.o [6]
+  .text              ro code   0x800'22e4    0x2a  fopen.o [6]
+  .text              ro code   0x800'230e    0x9c  packbits_init.o [8]
+  .text              ro code   0x800'23aa    0x54  fputc.o [6]
+  .rodata            const     0x800'2400    0x48  xfoprep.o [6]
+  .text              ro code   0x800'2448    0x3c  xcloseall.o [6]
+  .text              ro code   0x800'2484    0x28  data_init.o [8]
+  .text              ro code   0x800'24ac    0x22  fpinit_M.o [7]
+  .iar.init_table    const     0x800'24d0    0x2c  - Linker created -
+  .rodata            const     0x800'24fc    0x20  divisionByZero.c.obj [4]
+  .text              ro code   0x800'251c    0x1e  cmain.o [8]
+  .text              ro code   0x800'253a     0x4  low_level_init.o [6]
+  .text              ro code   0x800'253e     0x4  exit.o [6]
+  .text              ro code   0x800'2544     0xe  cexit.o [8]
+  .text              ro code   0x800'2554    0x1c  cstartup_M.o [8]
+  .text              ro code   0x800'2570    0x18  stm32f4xx_it.c.obj [2]
+  .text              ro code   0x800'2588    0x14  main.c.obj [2]
+  .text              ro code   0x800'259c    0x16  xprout.o [6]
+  .text              ro code   0x800'25b4     0xc  putchar.o [6]
+  .rodata            const     0x800'25c0    0x14  divisionByZero.c.obj [4]
+  .rodata            const     0x800'25d4    0x10  divisionByZero.c.obj [4]
+  .text              ro code   0x800'25e4    0x10  startup_stm32f429x.s.obj [5]
+  .rodata            const     0x800'25f4     0xc  divisionByZero.c.obj [4]
+  .rodata            const     0x800'2600     0xc  divisionByZero.c.obj [4]
+  .rodata            const     0x800'260c     0xc  divisionByZero.c.obj [4]
+  .text              ro code   0x800'2618     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'261c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2620     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2624     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2628     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'262c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2630     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2634     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2638     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'263c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2640     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2644     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2648     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'264c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2650     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2654     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2658     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'265c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2660     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2664     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2668     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'266c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2670     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2674     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2678     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'267c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2680     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2684     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2688     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'268c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2690     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2694     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2698     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'269c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26a0     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26a4     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26a8     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26ac     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26b0     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26b4     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26b8     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26bc     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26c0     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26c4     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26c8     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26cc     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26d0     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26d4     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26d8     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26dc     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26e0     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26e4     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26e8     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26ec     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26f0     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26f4     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26f8     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'26fc     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2700     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2704     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2708     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'270c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2710     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2714     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2718     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'271c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2720     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2724     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2728     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'272c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2730     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2734     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2738     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'273c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2740     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2744     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2748     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'274c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2750     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2754     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2758     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'275c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2760     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2764     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2768     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'276c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2770     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2774     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2778     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'277c     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2780     0x4  startup_stm32f429x.s.obj [5]
+  .text              ro code   0x800'2784     0x0  cstart_closeall.o [8]
+  .rodata            const     0x800'2784     0x0  zero_init3.o [8]
+  .rodata            const     0x800'2784     0x0  packbits_init.o [8]
+  Initializer bytes  const     0x800'2784    0x89  <for P4 s0>
+                             - 0x800'280d  0x2661
+
+"P4", part 1 of 3:                          0x100
+  P4 s0                       0x2000'0000   0x100  <Init block>
+    .data            inited   0x2000'0000    0x48  xfiles.o [6]
+    .data            inited   0x2000'0048    0x48  xfiles.o [6]
+    .data            inited   0x2000'0090    0x48  xfiles.o [6]
+    .data            inited   0x2000'00d8    0x20  xfiles.o [6]
+    .data            inited   0x2000'00f8     0x8  XShttio.o [6]
+                            - 0x2000'0100   0x100
+
+"P4", part 2 of 3:                          0x31c
+  .bss               zero     0x2000'0100   0x1d8  dlmalloc.o [6]
+  .bss               zero     0x2000'02d8    0x80  XShHandles.o [6]
+  .bss               zero     0x2000'0358    0x50  xfiles.o [6]
+  .bss               zero     0x2000'03a8    0x50  xfiles.o [6]
+  .bss               zero     0x2000'03f8    0x18  dlmalloc.o [6]
+  .bss               zero     0x2000'0410     0x4  main.c.obj [2]
+  .bss               zero     0x2000'0414     0x4  xgetmemchunk.o [6]
+  .bss               zero     0x2000'0418     0x1  XShttio.o [6]
+                            - 0x2000'0419   0x319
+
+"P4", part 3 of 3:                         0x4000
+  CSTACK                      0x2000'0420  0x2000  <Block>
+    CSTACK           uninit   0x2000'0420  0x2000  <Block tail>
+  HEAP                        0x2000'2420  0x2000  <Block>
+    HEAP             uninit   0x2000'2420  0x2000  <Block tail>
+                            - 0x2000'4420  0x4000
+
+Unused ranges:
+
+         From           To       Size
+         ----           --       ----
+   0x800'280d   0x81f'ffff  0x1f'd7f3
+  0x2000'041c  0x2000'041f        0x4
+  0x2000'4420  0x2001'bfff   0x1'7be0
+  0x2001'c000  0x2001'ffff     0x4000
+  0x2002'0000  0x2002'ffff   0x1'0000
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x319:
+          0x2000'0100  0x319
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x89 (53% of destination):
+           0x800'2784   0x89
+    1 destination range, total size 0x100:
+          0x2000'0000  0x100
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                    ro code  ro data  rw data
+    ------                    -------  -------  -------
+command line/config:
+    ---------------------------------------------------
+    Total:
+
+/home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src: [1]
+    ---------------------------------------------------
+    Total:
+
+/home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/app: [2]
+    main.c.obj                     20                 4
+    stm32f4xx_it.c.obj             24
+    ---------------------------------------------------
+    Total:                         44                 4
+
+/home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/board: [3]
+    ---------------------------------------------------
+    Total:
+
+/home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic: [4]
+    divisionByZero.c.obj          176      104
+    ---------------------------------------------------
+    Total:                        176      104
+
+/home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/startup: [5]
+    startup_stm32f429x.s.obj      808
+    system_stm32f4xx.c.obj        292
+    ---------------------------------------------------
+    Total:                      1'100
+
+dl7M_tlf.a: [6]
+    XShHandles.o                  272               128
+    XShttio.o                      60        5        9
+    abort.o                         6
+    dlmalloc.o                  5'316               496
+    exit.o                          4
+    fclose.o                      126
+    fflush.o                      172
+    fopen.o                        42
+    fputc.o                        84
+    fseek.o                        36
+    heaptramp0.o                    4
+    low_level_init.o                4
+    printf.o                       40
+    putchar.o                      12
+    xcloseall.o                    60
+    xfgpos.o                       12
+    xfiles.o                               132      408
+    xfofind.o                     228
+    xfopen.o                       76
+    xfoprep.o                     244       72
+    xfspos.o                      216
+    xfwprep.o                     180
+    xgetmemchunk.o                 44                 4
+    xprintftiny.o                 308
+    xprout.o                       22
+    ---------------------------------------------------
+    Total:                      7'568      209    1'045
+
+m7M_tls.a: [7]
+    fpinit_M.o                     34
+    ---------------------------------------------------
+    Total:                         34
+
+rt7M_tl.a: [8]
+    ABImemcpy.o                   134
+    cexit.o                        14
+    cmain.o                        30
+    cstart_closeall.o
+    cstartup_M.o                   28
+    data_init.o                    40
+    packbits_init.o               156
+    strlen.o                       54
+    zero_init3.o                   58
+    ---------------------------------------------------
+    Total:                        514
+
+shb_l.a: [9]
+    close.o                        24
+    dwrite.o                       30
+    exit.o                         20
+    iarttio.o                     124
+    iarwrite.o                     34
+    iarwstd.o                      32
+    lseek.o                        74
+    open.o                         72
+    remove.o                       20
+    write.o                        16
+    ---------------------------------------------------
+    Total:                        446
+
+    Gaps                           10        4
+    Linker created                          44   16'384
+-------------------------------------------------------
+    Grand Total:                9'892      361   17'433
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'24d0          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'24fc          --   Gb  - Linker created -
+?main                    0x800'251d         Code  Gb  cmain.o [8]
+BusFault_Handler         0x800'2577    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+CSTACK$$Base            0x2000'0420          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2420          --   Gb  - Linker created -
+DebugMon_Handler         0x800'257d    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+HEAP$$Base              0x2000'2420          --   Gb  - Linker created -
+HEAP$$Limit             0x2000'4420          --   Gb  - Linker created -
+HardFault_Handler        0x800'2573    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+MemManage_Handler        0x800'2575    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+NMI_Handler              0x800'2571    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+PendSV_Handler           0x800'257f    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+Region$$Table$$Base      0x800'24d0          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'24fc          --   Gb  - Linker created -
+SVC_Handler              0x800'257b    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+SetSysClock              0x800'195b   0xaa  Code  Lc  system_stm32f4xx.c.obj [5]
+SysTick_Handler          0x800'2581    0x8  Code  Gb  stm32f4xx_it.c.obj [2]
+SystemInit               0x800'1915   0x46  Code  Gb  system_stm32f4xx.c.obj [5]
+TimingDelay             0x2000'0410    0x4  Data  Lc  main.c.obj [2]
+TimingDelay_Decrement    0x800'2589   0x10  Code  Gb  main.c.obj [2]
+UsageFault_Handler       0x800'2579    0x2  Code  Gb  stm32f4xx_it.c.obj [2]
+_Close_all               0x800'2449   0x3c  Code  Gb  xcloseall.o [6]
+_Files                  0x2000'00d8   0x20  Data  Gb  xfiles.o [6]
+_Fofind                  0x800'1d8d   0x48  Code  Gb  xfofind.o [6]
+_Fofree                  0x800'1dd5   0x96  Code  Gb  xfofind.o [6]
+_Fopen                   0x800'1d41   0x3c  Code  Gb  xfopen.o [6]
+_Fopen::rwacc            0x800'1d7c   0x10  Data  Lc  xfopen.o [6]
+_Foprep                  0x800'1b49   0xf4  Code  Gb  xfoprep.o [6]
+_Foprep::init            0x800'2400   0x48  Data  Lc  xfoprep.o [6]
+_Fspos                   0x800'2005   0xd8  Code  Gb  xfspos.o [6]
+_Fwprep                  0x800'2133   0xb4  Code  Gb  xfwprep.o [6]
+_Nnl                     0x800'20dd    0xc  Code  Gb  xfgpos.o [6]
+_PrintfTiny              0x800'17c1  0x11c  Code  Gb  xprintftiny.o [6]
+_Prout                   0x800'259d   0x16  Code  Gb  xprout.o [6]
+__aeabi_memcpy4          0x800'1c3d         Code  Gb  ABImemcpy.o [8]
+__aeabi_memcpy8          0x800'1c3d         Code  Gb  ABImemcpy.o [8]
+__cexit_closeall         0x800'2547         Code  Gb  cexit.o [8]
+__close                  0x800'1f21   0x18  Code  Gb  close.o [9]
+__cmain                  0x800'251d         Code  Gb  cmain.o [8]
+__cstart_closeall        0x800'2784         Data  Gb  cstart_closeall.o [8]
+__data_GetMemChunk       0x800'16b1   0x2c  Code  Gb  xgetmemchunk.o [6]
+__data_GetMemChunk::start
+                        0x2000'0414    0x4  Data  Lc  xgetmemchunk.o [6]
+__dwrite                 0x800'1fa5   0x1e  Code  Gb  dwrite.o [9]
+__exit                   0x800'16dd   0x14  Code  Gb  exit.o [9]
+__iar_Stderr            0x2000'0090   0x48  Data  Gb  xfiles.o [6]
+__iar_Stdin             0x2000'0000   0x48  Data  Gb  xfiles.o [6]
+__iar_Stdout            0x2000'0048   0x48  Data  Gb  xfiles.o [6]
+__iar_close_ttio         0x800'16f1   0x2c  Code  Gb  iarttio.o [9]
+__iar_data_init3         0x800'2485   0x28  Code  Gb  data_init.o [8]
+__iar_dlfree             0x800'113d  0x52c  Code  Gb  dlmalloc.o [6]
+__iar_dlmalloc           0x800'0235  0xf08  Code  Gb  dlmalloc.o [6]
+__iar_get_ttio           0x800'171d   0x4c  Code  Gb  iarttio.o [9]
+__iar_init_vfp           0x800'24ad         Code  Gb  fpinit_M.o [7]
+__iar_lookup_ttioh       0x800'179b    0x4  Code  Gb  XShttio.o [6]
+__iar_packbits_init3     0x800'230f   0x9c  Code  Gb  packbits_init.o [8]
+__iar_program_start      0x800'2555         Code  Gb  cstartup_M.o [8]
+__iar_sh_Discard         0x800'1a7d   0x42  Code  Gb  XShHandles.o [6]
+__iar_sh_Init            0x800'1a39   0x44  Code  Gb  XShHandles.o [6]
+__iar_sh_Move            0x800'1abf   0x46  Code  Gb  XShHandles.o [6]
+__iar_sh_Pos             0x800'1b05   0x3e  Code  Gb  XShHandles.o [6]
+__iar_sh_stdout          0x800'1fc3   0x20  Code  Gb  iarwstd.o [9]
+__iar_sh_write           0x800'1fe3   0x22  Code  Gb  iarwrite.o [9]
+__iar_ttio_guard_lock    0x800'176d   0x1e  Code  Gb  XShttio.o [6]
+__iar_ttio_guard_unlock
+                         0x800'178b   0x10  Code  Gb  XShttio.o [6]
+__iar_ttio_handles      0x2000'00f8    0x8  Data  Lc  XShttio.o [6]
+__iar_zero_init3         0x800'1677   0x3a  Code  Gb  zero_init3.o [8]
+__low_level_init         0x800'253b    0x4  Code  Gb  low_level_init.o [6]
+__lseek                  0x800'20e9   0x4a  Code  Gb  lseek.o [9]
+__open                   0x800'1f4d   0x48  Code  Gb  open.o [9]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f429x.s.obj [5]
+__write                  0x800'1f95   0x10  Code  Gb  write.o [9]
+_call_main               0x800'2529         Code  Gb  cmain.o [8]
+_exit                    0x800'2545         Code  Gb  cexit.o [8]
+_gm_                    0x2000'0100  0x1d8  Data  Lc  dlmalloc.o [6]
+_main                    0x800'2533         Code  Gb  cmain.o [8]
+abort                    0x800'1671    0x6  Code  Gb  abort.o [6]
+calculateAverageSalary   0x800'2231    0xa  Code  Gb  divisionByZero.c.obj [4]
+displayPersonalInfo      0x800'220d   0x24  Code  Gb  divisionByZero.c.obj [4]
+ebuf                    0x2000'0358   0x50  Data  Lc  xfiles.o [6]
+exit                     0x800'253f    0x4  Code  Gb  exit.o [6]
+fclose                   0x800'1cc3   0x7e  Code  Gb  fclose.o [6]
+fflush                   0x800'1ee5   0x34  Code  Gb  fflush.o [6]
+fflushOne                0x800'1e71   0x74  Code  Lc  fflush.o [6]
+fopen                    0x800'22e5   0x2a  Code  Gb  fopen.o [6]
+fputc                    0x800'23ab   0x54  Code  Gb  fputc.o [6]
+free                     0x800'1f1d    0x4  Code  Gb  heaptramp0.o [6]
+fseek                    0x800'21e7   0x24  Code  Gb  fseek.o [6]
+init_mparams             0x800'01c7   0x2c  Code  Lc  dlmalloc.o [6]
+init_top                 0x800'01f3   0x34  Code  Lc  dlmalloc.o [6]
+main                     0x800'2267   0x38  Code  Gb  divisionByZero.c.obj [4]
+mparams                 0x2000'03f8   0x18  Data  Lc  dlmalloc.o [6]
+obuf                    0x2000'03a8   0x50  Data  Lc  xfiles.o [6]
+out                      0x800'17a9   0x18  Code  Lc  xprintftiny.o [6]
+printf                   0x800'22bd   0x28  Code  Gb  printf.o [6]
+processFile              0x800'2263    0x4  Code  Gb  divisionByZero.c.obj [4]
+processStaff             0x800'223b   0x28  Code  Gb  divisionByZero.c.obj [4]
+putchar                  0x800'25b5    0xc  Code  Gb  putchar.o [6]
+remove                   0x800'1f39   0x14  Code  Gb  remove.o [9]
+sFileInfo               0x2000'02d8   0x80  Data  Lc  XShHandles.o [6]
+segment_holding          0x800'01ad   0x1a  Code  Lc  dlmalloc.o [6]
+strlen                   0x800'18dd         Code  Gb  strlen.o [8]
+ttio_guard              0x2000'0418    0x1  Data  Lc  XShttio.o [6]
+
+
+[1] = /home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/STM32F4xx_StdPeriph_Driver/src
+[2] = /home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/app
+[3] = /home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/board
+[4] = /home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/lib-logic
+[5] = /home/ubuntu/webinar-demo-bxarm-ja/CMakeFiles/webinar-demo-bxarm-ja.dir/startup
+[6] = dl7M_tlf.a
+[7] = m7M_tls.a
+[8] = rt7M_tl.a
+[9] = shb_l.a
+
+   9'892 bytes of readonly  code memory
+     361 bytes of readonly  data memory
+  17'433 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
