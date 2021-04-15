@@ -56,7 +56,3 @@ int main()
     return 0;
 }
 
-int util_func(int a, int b)
-{
-	return a + b;
-}
